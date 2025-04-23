@@ -2,11 +2,156 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <script src="index.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<header class="header">
+    <div class="container header__container">
+        <div class="header__logo"></div>
+        <nav class="header__nav">
+            <ul class="header__menu">
+                <li class="header__menu-item"><a href="#">Consectetur</a></li>
+                <li class="header__menu-item"><a href="#">Sit Amet</a></li>
+                <li class="header__menu-item"><a href="#">Eiusmod Tempor</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="main">
+    <div class="container main__container">
+        <section class="main__page">
+            <div class="main__page-left">
+                <h1 class="main__page-title">Zagolovok one types</h1>
+                <p class="main__page-subtitle">Zagolovok too types</p>
+            <ul class="main__page-features">
+                <li class="main__page-features-item">$10 000 consectetur elit</li>
+                <li class="main__page-features-item">30% sed do eiusmod tempor</li>
+                <li class="main__page-features-item">17% adipiscing elit sed do</li>
+            </ul>
+            <button class="main__page-button">ORDER</button>
+            </div>
+                <div class="main__page-right">
+                    <img src="img1.jpg" alt="IMG1" class="main__page-image">
+                </div>
+        </section>
+
+        <section class="property-listing">
+            <div class="property-listing__background">
+                <img src="background.jpg" alt="IMG2" aria-hidden="true">
+            </div>
+
+            <div class="property-listing__content">
+                <ul class="property-list">
+                    <li class="property-list__item">
+                        <article class="property-card">
+                            <div class="property-card__icon" aria-hidden="true">
+                                <svg ...></svg>
+                            </div>
+                            <p class="property-card__description">текст 1</p>
+                        </article>
+                    </li>
+                    <li class="property-list__item">
+                        <article class="property-card">
+                            <div class="property-card__icon" aria-hidden="true">
+                                <svg ...></svg>
+                            </div>
+                            <p class="property-card__description">текст 2</p>
+                        </article>
+                    </li>
+                    <li class="property-list__item">
+                        <article class="property-card">
+                            <div class="property-card__icon" aria-hidden="true">
+                                <svg ...></svg>
+                            </div>
+                            <p class="property-card__description">текст 3</p>
+                        </article>
+                    </li>
+                    <li class="property-list__item">
+                        <article class="property-card">
+                            <div class="property-card__icon" aria-hidden="true">
+                                <svg ...></svg>
+                            </div>
+                            <p class="property-card__description">текст 4</p>
+                        </article>
+                    </li>
+                </ul>
+
+                <button class="property-listing__button">ORDER</button>
+            </div>
+        </section>
+
+        <section class="contact-form">
+            <div class="contact-form__background" aria-hidden="true">
+                </div>
+
+            <div class="contact-form__content">
+                <h2 class="contact-form__title">Consectetur sed do eiusmod</h2>
+                <form class="form" action="#" method="post">
+                    <div class="form__group">
+                        <label for="name" class="form__label">Name</label>
+                        <input type="text" id="name" name="name" class="form__input" required>
+                    </div>
+                    <div class="form__group">
+                        <label for="email" class="form__label">E-mail</label>
+                        <input type="email" id="email" name="email" class="form__input" required>
+                    </div>
+                    <div class="form__group">
+                        <div class="form__checkbox-wrapper">
+                            <input type="checkbox" id="privacy" name="privacy" class="form__checkbox" required>
+                            <label for="privacy" class="form__checkbox-label">I accept Privacy policy</label>
+                        </div>
+                    </div>
+                    <button type="submit" class="form__button">SUBMIT FORM</button>
+                </form>
+            </div>
+
+        </section>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="container footer__container">
+
+        <div class="footer__top-nav">
+            <ul class="footer__top-nav-list">
+                <li class="footer__top-nav-item"><a href="#">CONSECTETUR</a></li>
+                <li class="footer__top-nav-item"><a href="#">ADIPISCING</a></li>
+                <li class="footer__top-nav-item"><a href="#">TEMPOR</a></li>
+            </ul>
+        </div>
+
+        <div class="footer__bottom">  <div class="footer__left">
+            <div class="footer__logo">LOREM</div>
+            <p class="footer__copyright">&copy; 2024, Copyright.</p>
+        </div>
+            <div class="footer__social">
+                <ul class="footer__social-list">
+                    <li class="footer__social-item"><a href="#" aria-label="Instagram"><svg ...></svg></a></li>
+                    <li class="footer__social-item"><a href="#" aria-label="TikTok"><svg ...></svg></a></li>
+                    <li class="footer__social-item"><a href="#" aria-label="LinkedIn"><svg ...></svg></a></li>
+                    <li class="footer__social-item"><a href="#" aria-label="Facebook"><svg ...></svg></a></li>
+                    <li class="footer__social-item"><a href="#" aria-label="Telegram"><svg ...></svg></a></li>
+                    <li class="footer__social-item"><a href="#" aria-label="YouTube"><svg ...></svg></a></li>
+                </ul>
+            </div>
+            <div class="footer__nav">
+                <ul class="footer__nav-list">
+                    <li class="footer__nav-item"><a href="#">Privacy policy</a></li>
+                    <li class="footer__nav-item"><a href="#">Terms of Use</a></li>
+                    <li class="footer__nav-item"> <button class="footer__button">ORDER</button></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="index.js"></script>
 </body>
+
 </html>
