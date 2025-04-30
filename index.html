@@ -20,9 +20,9 @@
         </button>
         <nav class="header__nav">
             <ul class="header__menu">
-                <li class="header__menu-item"><a href="#">Consectetur</a></li>
-                <li class="header__menu-item"><a href="#">Sit Amet</a></li>
-                <li class="header__menu-item"><a href="#">Eiusmod Tempor</a></li>
+                <li class="header__menu-item"><a class="link" href="#">Consectetur</a></li>
+                <li class="header__menu-item"><a class="link" href="#">Sit Amet</a></li>
+                <li class="header__menu-item"><a class="link" href="#">Eiusmod Tempor</a></li>
             </ul>
         </nav>
     </div>
@@ -156,51 +156,79 @@
 
 <footer class="footer">
     <div class="footer__container">
-
-        <div class="footer__top-nav">
-            <ul class="footer__top-nav-list">
-                <li class="footer__top-nav-item"><a href="#">CONSECTETUR</a></li>
-                <li class="footer__top-nav-item"><a href="#">ADIPISCING</a></li>
-                <li class="footer__top-nav-item"><a href="#">TEMPOR</a></li>
+        <nav class="footer__top">
+            <ul class="footer__top-nav">
+                <li class="footer__top-nav-item"><a class="link" href="#">CONSECTETUR</a></li>
+                <li class="footer__top-nav-item"><a class="link" href="#">ADIPISCING</a></li>
+                <li class="footer__top-nav-item"><a class="link" href="#">TEMPOR</a></li>
             </ul>
-        </div>
-
+        </nav>
         <div class="footer__bottom">
-            <div class="footer__left">
-                <div class="footer__logo">LOREM</div>
-                <p class="footer__copyright">&copy; 2024, Copyright.</p>
-            </div>
-            <div class="footer__social">
-                <ul class="footer__social-list">
-                    <li class="footer__social-item"><a href="#" aria-label="Instagram">
-                        <svg ...></svg>
-                    </a></li>
-                    <li class="footer__social-item"><a href="#" aria-label="TikTok">
-                        <svg ...></svg>
-                    </a></li>
-                    <li class="footer__social-item"><a href="#" aria-label="LinkedIn">
-                        <svg ...></svg>
-                    </a></li>
-                    <li class="footer__social-item"><a href="#" aria-label="Facebook">
-                        <svg ...></svg>
-                    </a></li>
-                    <li class="footer__social-item"><a href="#" aria-label="Telegram">
-                        <svg ...></svg>
-                    </a></li>
-                    <li class="footer__social-item"><a href="#" aria-label="YouTube">
-                        <svg ...></svg>
-                    </a></li>
-                </ul>
-            </div>
-            <div class="footer__nav">
-                <ul class="footer__nav-list">
-                    <li class="footer__nav-item"><a href="#">Privacy policy</a></li>
-                    <li class="footer__nav-item"><a href="#">Terms of Use</a></li>
-                    <li class="footer__nav-item">
-                        <button class="footer__button">ORDER</button>
-                    </li>
+            <div class="footer__bottom-row">
+                <div>
+                    <div class="footer__logo">LOREM</div>
+                </div>
+                <div class="footer__bottom-row-center">
+                    <ul class="footer__social-list">
+                        <li class="footer__social-item">
+                            <a class="link" href="#" aria-label="Instagram">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_65_1272)">
+                                        <path d="M21.332 5.33203H10.6654C7.71985 5.33203 5.33203 7.71985 5.33203 10.6654V21.332C5.33203 24.2775 7.71985 26.6654 10.6654 26.6654H21.332C24.2775 26.6654 26.6654 24.2775 26.6654 21.332V10.6654C26.6654 7.71985 24.2775 5.33203 21.332 5.33203Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M16 20C18.2091 20 20 18.2091 20 16C20 13.7909 18.2091 12 16 12C13.7909 12 12 13.7909 12 16C12 18.2091 13.7909 20 16 20Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M22 10V10.001" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_65_1272">
+                                            <rect width="32" height="32" fill="currentColor" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer__social-item">
+                            <a class="link" href="#" aria-label="TikTok">
+                                <div class="social-icon social-icon--tiktok"></div>
+                            </a>
+                        </li>
+                        <li class="footer__social-item">
+                            <a class="link" href="#" aria-label="LinkedIn">
+                                <div class="social-icon social-icon--linkedin"></div>
+<!--                                <img src="./img/svg/link.svg" alt="linkedIn">-->
+                            </a>
+                        </li>
+                        <li class="footer__social-item">
+                            <a href="#" aria-label="Facebook">
+                                <img src="./img/svg/faceb.svg" alt="facebook">
+                            </a>
+                        </li>
+                        <li class="footer__social-item">
+                            <a class="link" href="#" aria-label="Telegram">
+                                <img src="./img/svg/telega.svg" alt="telegram">
+                            </a>
+                        </li>
+                        <li class="footer__social-item">
+                            <a class="link" href="#" aria-label="YouTube">
+                                <img src="./img/svg/yuot.svg" alt="youtube">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
 
-                </ul>
+                <div>
+                    <button class="footer__button">ORDER</button>
+                </div>
+            </div>
+            <div class="footer__bottom-row">
+                <div>
+                    <p class="footer__copyright">&copy; 2024, Copyright.</p>
+                </div>
+                <div class="footer__bottom-row-center">
+                    <a class="link" href="#">Privacy policy</a>
+                </div>
+                <div>
+                    <a class="link" href="#">Terms of Use</a>
+                </div>
             </div>
         </div>
     </div>
