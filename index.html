@@ -63,25 +63,22 @@
                         <span class="description">adipiscing elit sed do</span>
                     </li>
                 </ul>
-                <button class="main__hero-button">ORDER</button>
+                <button class="order-button">ORDER</button>
             </div>
             <div class="main__hero-right">
                 <img src="./img/content/img1.jpg" alt="Changan07" class="main__hero-image">
             </div>
         </section>
 
-        <section class="three-section-container">
+        <section class="three-section-container" id="second-screen">
             <div class="left-image"></div>
             <div class="middle-content property-listing">
-                <div class="property-listing__background">
-                    <img src="./img/content/img2.jpg" alt="Changan07" aria-hidden="true">
-                </div>
                 <div class="property-listing__content">
                     <ul class="property-list">
                         <li class="property-list__item">
                             <article class="property-card">
-                                <div class="property-card__icon" aria-hidden="true">
-                                    <img src="./img/svg/icon1.svg" alt="icon" aria-hidden="true">
+                                <div class="property-card__icon">
+                                    <img src="./img/svg/icon1.svg" alt="icon">
                                 </div>
                                 <p class="property-card__description">21-дюймовые колеса Energy Wind Blade + шины
                                     Continental + спортивные суппорта + спортивные суппорта (+267,000руб.)</p>
@@ -89,8 +86,8 @@
                         </li>
                         <li class="property-list__item">
                             <article class="property-card">
-                                <div class="property-card__icon" aria-hidden="true">
-                                    <img src="./img/svg/icon1.svg" alt="icon" aria-hidden="true">
+                                <div class="property-card__icon">
+                                    <img src="./img/svg/icon1.svg" alt="icon">
                                 </div>
                                 <p class="property-card__description">Интеллектуальные интерактивные фонари
                                     (+73,692руб.) 21-дюймовые колеса Energy Wind Blade + шины Continental + спортивные
@@ -99,8 +96,8 @@
                         </li>
                         <li class="property-list__item">
                             <article class="property-card">
-                                <div class="property-card__icon" aria-hidden="true">
-                                    <img src="./img/svg/icon1.svg" alt="icon" aria-hidden="true">
+                                <div class="property-card__icon">
+                                    <img src="./img/svg/icon1.svg" alt="icon">
                                 </div>
                                 <p class="property-card__description">Интеллектуальные интерактивные фонари
                                     (+73,692руб.) 21-дюймовые колеса Energy Wind Blade + шины Continental + спортивные
@@ -109,8 +106,8 @@
                         </li>
                         <li class="property-list__item">
                             <article class="property-card">
-                                <div class="property-card__icon" aria-hidden="true">
-                                    <img src="./img/svg/icon1.svg" alt="icon" aria-hidden="true">
+                                <div class="property-card__icon">
+                                    <img src="./img/svg/icon1.svg" alt="icon">
                                 </div>
                                 <p class="property-card__description">текст 4Интеллектуальные интерактивные фонари
                                     (+73,692руб.) 21-дюймовые колеса Energy Wind Blade + шины Continental + спортивные
@@ -118,11 +115,10 @@
                             </article>
                         </li>
                     </ul>
-                    <button class="property-listing__button">ORDER</button>
+                    <button class="order-button">ORDER</button>
                 </div>
             </div>
             <div class="right-image">
-                <img src="./img/content/img3-bg.jpg" alt="Changan07" aria-hidden="true">
             </div>
         </section>
 
@@ -131,10 +127,12 @@
                 <div class="contact-form__left">
                     <div class="contact-form__container">
                         <div class="contact-form__title">Consectetur <br> sed do eiusmod</div>
-                        <form action="javascript:void 0" method="post" class="form contact-form__form">
+                        <form method="post" class="form contact-form__form">
                             <div class="form__group">
-                                <input type="text" id="name" name="name" class="form__input" placeholder="Name" required>
-                                <input type="email" id="email" name="email" class="form__input" placeholder="E-mail" required>
+                                <input type="text" id="name" name="name" class="form__input" placeholder="Name"
+                                       required>
+                                <input type="email" id="email" name="email" class="form__input" placeholder="E-mail"
+                                       required>
                             </div>
                             <div class="form__group">
                                 <label class="form__checkbox-label">
@@ -171,57 +169,62 @@
                 <div class="footer__bottom-row-center">
                     <ul class="footer__social-list">
                         <li class="footer__social-item">
-                            <a class="link" href="#" aria-label="Instagram">
-                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <a class="link" href="https://www.instagram.com/" aria-label="Instagram">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_65_1272)">
-                                        <path d="M21.332 5.33203H10.6654C7.71985 5.33203 5.33203 7.71985 5.33203 10.6654V21.332C5.33203 24.2775 7.71985 26.6654 10.6654 26.6654H21.332C24.2775 26.6654 26.6654 24.2775 26.6654 21.332V10.6654C26.6654 7.71985 24.2775 5.33203 21.332 5.33203Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M16 20C18.2091 20 20 18.2091 20 16C20 13.7909 18.2091 12 16 12C13.7909 12 12 13.7909 12 16C12 18.2091 13.7909 20 16 20Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M22 10V10.001" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M21.332 5.33203H10.6654C7.71985 5.33203 5.33203 7.71985 5.33203 10.6654V21.332C5.33203 24.2775 7.71985 26.6654 10.6654 26.6654H21.332C24.2775 26.6654 26.6654 24.2775 26.6654 21.332V10.6654C26.6654 7.71985 24.2775 5.33203 21.332 5.33203Z"
+                                              stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                              stroke-linejoin="round"/>
+                                        <path d="M16 20C18.2091 20 20 18.2091 20 16C20 13.7909 18.2091 12 16 12C13.7909 12 12 13.7909 12 16C12 18.2091 13.7909 20 16 20Z"
+                                              stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                              stroke-linejoin="round"/>
+                                        <path d="M22 10V10.001" stroke="currentColor" stroke-width="2"
+                                              stroke-linecap="round" stroke-linejoin="round"/>
                                     </g>
                                     <defs>
                                         <clipPath id="clip0_65_1272">
-                                            <rect width="32" height="32" fill="currentColor" />
+                                            <rect width="32" height="32" fill="currentColor"/>
                                         </clipPath>
                                     </defs>
                                 </svg>
                             </a>
                         </li>
                         <li class="footer__social-item">
-                            <a class="link" href="#" aria-label="TikTok">
+                            <a class="link" href="https://www.tiktok.com/en/" aria-label="TikTok">
                                 <div class="social-icon social-icon--tiktok"></div>
                             </a>
                         </li>
                         <li class="footer__social-item">
-                            <a class="link" href="#" aria-label="LinkedIn">
+                            <a class="link" href="https://www.linkedin.com/" aria-label="LinkedIn">
                                 <div class="social-icon social-icon--linkedin"></div>
-<!--                                <img src="./img/svg/link.svg" alt="linkedIn">-->
                             </a>
                         </li>
                         <li class="footer__social-item">
-                            <a href="#" aria-label="Facebook">
-                                <img src="./img/svg/faceb.svg" alt="facebook">
+                            <a class="link" href="https://facebook.com" aria-label="Facebook">
+                                <div class="social-icon social-icon--facebook"></div>
                             </a>
                         </li>
                         <li class="footer__social-item">
-                            <a class="link" href="#" aria-label="Telegram">
-                                <img src="./img/svg/telega.svg" alt="telegram">
+                            <a class="link" href="https://web.telegram.org/" aria-label="Telegram">
+                                <div class="social-icon social-icon--telegram"></div>
                             </a>
                         </li>
                         <li class="footer__social-item">
-                            <a class="link" href="#" aria-label="YouTube">
-                                <img src="./img/svg/yuot.svg" alt="youtube">
+                            <a class="link" href="https://www.youtube.com/" aria-label="YouTube">
+                               <div class="social-icon social-icon--youtube"></div>
                             </a>
                         </li>
                     </ul>
                 </div>
 
                 <div>
-                    <button class="footer__button">ORDER</button>
+                    <button class="order-button">ORDER</button>
                 </div>
             </div>
             <div class="footer__bottom-row">
                 <div>
-                    <p class="footer__copyright">&copy; 2024, Copyright.</p>
+                    <p class="footer__copyright">&copy; 2025 Copyright.</p>
                 </div>
                 <div class="footer__bottom-row-center">
                     <a class="link" href="#">Privacy policy</a>
