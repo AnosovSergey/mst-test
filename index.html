@@ -9,229 +9,249 @@
 </head>
 <body>
 
-<header class="header">
-    <div class="header__container">
-        <div class="header__main">
-            <button class="header__menu-toggle" aria-label="Menu"><span class="header__menu-toggle-line"></span>
-                <span class="header__menu-toggle-line"></span>
-                <span class="header__menu-toggle-line"></span>
-            </button>
-            <div class="header__logo">
-                <img src="img/svg/logo-white.svg" alt="logo">
+<main class="col container">
+    <header class="header">
+        <div class="row header__container">
+            <div class="row header__main">
+                <button class="header__menu-toggle" aria-label="Menu"><span class="header__menu-toggle-line"></span>
+                    <span class="header__menu-toggle-line"></span>
+                    <span class="header__menu-toggle-line"></span>
+                </button>
+                <div class="header__logo">
+                    <img src="img/svg/logo-white.svg" alt="logo">
+                </div>
+                <nav class="row header__nav">
+                    <ul class="row header__menu">
+                        <li class="header__menu-item">
+                            <a class="link" href="#">Lineup DEEPAL</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a class="link" href="#modal">Buy a car</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a class="link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-            <nav class="header__nav">
-                <ul class="header__menu">
-                    <li class="header__menu-item"><a class="link" href="#">Lineup DEEPAL</a></li>
-                    <li class="header__menu-item"><a class="link" href="#">Buy a car</a></li>
-                    <li class="header__menu-item"><a class="link" href="#">Contact</a></li>
+            <div class="header__span"></div>
+        </div>
+    </header>
+
+    <section class="row screen screen__first">
+        <div class="screen__first__left">
+            <h1 class="screen__first__title">Touch the future</h1>
+            <p class="screen__first__subtitle">choose DEEPAL S07</p>
+            <ul class="features">
+                <li class="features__item">
+                    <span class="checkmark-icon" aria-hidden="true">
+                        <img src="img/svg/checked.svg" alt="checked">
+                    </span>
+
+                    <span class="features__price">160</span>
+
+                    <span>
+                        kW — Maximum motor power
+                    </span>
+                </li>
+                <li class="features__item">
+                    <span class="checkmark-icon" aria-hidden="true">
+                        <img src="img/svg/checked.svg" alt="checked">
+                    </span>
+
+                    <span class="features__price">560</span>
+
+                    <span>
+                        km — Maximum EV range on a full charge
+                    </span>
+                </li>
+                <li class="features__item">
+                    <span class="checkmark-icon" aria-hidden="true">
+                        <img src="img/svg/checked.svg" alt="checked">
+                    </span>
+
+                    <span class="features__price">2,900</span>
+
+                    <span>
+                        mm — Wheelbase
+                    </span>
+                </li>
+            </ul>
+            <button class="order-button">ORDER</button>
+        </div>
+        <div class="screen__first__right"></div>
+        <div class="screen__first__image"></div>
+    </section>
+
+    <section class="row screen screen__second">
+        <div class="screen__second__left-image"></div>
+        <div class="col screen__second__property-listing">
+            <ul class="property-list">
+                <li class="property-list__item">
+                    <article class="property-card">
+                        <div class="property-card__icon">
+                            <img src="./img/svg/icon1.svg" alt="icon">
+                        </div>
+                        <p class="property-card__description">The EV trim is equipped with an electric motor producing 218–258 hp.</p>
+                    </article>
+                </li>
+                <li class="property-list__item">
+                    <article class="property-card">
+                        <div class="property-card__icon">
+                            <img src="./img/svg/icon1.svg" alt="icon">
+                        </div>
+                        <p class="property-card__description">The EREV trim is equipped with an electric motor producing 238 hp and a 1.5-liter JL473QJ engine producing 95 hp.</p>
+                    </article>
+                </li>
+                <li class="property-list__item">
+                    <article class="property-card">
+                        <div class="property-card__icon">
+                            <img src="./img/svg/icon1.svg" alt="icon">
+                        </div>
+                        <p class="property-card__description">Intelligent interactive headlights (+1000 $) 21-inch Energy Wind Blade wheels + Continental tires + sport calipers.</p>
+                    </article>
+                </li>
+                <li class="property-list__item">
+                    <article class="property-card">
+                        <div class="property-card__icon">
+                            <img src="./img/svg/icon1.svg" alt="icon">
+                        </div>
+                        <p class="property-card__description">Two interior options to choose from: orange and black, panoramic sunroof, rear climate control, head-up display.</p>
+                    </article>
+                </li>
+            </ul>
+            <button class="order-button">ORDER</button>
+        </div>
+        <div class="screen__second__right-image">
+        </div>
+    </section>
+
+    <section class="col screen screen__third">
+        <div class="contact-form">
+            <div class="contact-form__left">
+                <div class="contact-form__container">
+                    <div class="contact-form__title">Your Information</div>
+                    <form method="post" class="form contact-form__form">
+                        <div class="form__group">
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                class="form__input"
+                                placeholder="Name"
+                                required
+                            />
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                class="form__input"
+                                placeholder="E-mail"
+                                required
+                            />
+                        </div>
+                        <div class="form__group">
+                            <label class="form__checkbox-label">
+                                <input type="checkbox" id="privacy" name="privacy" class="form__checkbox" required>
+                                <span>I accept Privacy policy</span>
+                            </label>
+                        </div>
+                        <button type="submit" class="form__button">CONFIRM</button>
+                    </form>
+                </div>
+            </div>
+            <div class="contact-form__right">
+            </div>
+            <img src="./img/content/img5.png" alt="Women" class="contact-form__image-women">
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <nav class="footer__top">
+                <ul class="footer__top-nav">
+                    <li class="footer__top-nav-item"><a class="link" href="#">Dealer</a></li>
+                    <li class="footer__top-nav-item"><a class="link" href="#">Contact</a></li>
+                    <li class="footer__top-nav-item"><a class="link" href="#">About</a></li>
                 </ul>
             </nav>
-        </div>
-        <div class="header__span"></div>
-    </div>
-</header>
+            <div class="footer__bottom">
+                <div class="footer__bottom-row">
+                    <div>
+                        <div class="footer__logo">CHANGAN</div>
+                    </div>
+                    <div class="footer__bottom-row-center">
+                        <ul class="footer__social-list">
+                            <li class="footer__social-item">
+                                <a class="link" href="https://www.instagram.com/" aria-label="Instagram">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_65_1272)">
+                                            <path d="M21.332 5.33203H10.6654C7.71985 5.33203 5.33203 7.71985 5.33203 10.6654V21.332C5.33203 24.2775 7.71985 26.6654 10.6654 26.6654H21.332C24.2775 26.6654 26.6654 24.2775 26.6654 21.332V10.6654C26.6654 7.71985 24.2775 5.33203 21.332 5.33203Z"
+                                                  stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                            <path d="M16 20C18.2091 20 20 18.2091 20 16C20 13.7909 18.2091 12 16 12C13.7909 12 12 13.7909 12 16C12 18.2091 13.7909 20 16 20Z"
+                                                  stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                            <path d="M22 10V10.001" stroke="currentColor" stroke-width="2"
+                                                  stroke-linecap="round" stroke-linejoin="round"/>
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_65_1272">
+                                                <rect width="32" height="32" fill="currentColor"/>
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer__social-item">
+                                <a class="link" href="https://www.tiktok.com/en/" aria-label="TikTok">
+                                    <div class="social-icon social-icon--tiktok"></div>
+                                </a>
+                            </li>
+                            <li class="footer__social-item">
+                                <a class="link" href="https://www.linkedin.com/" aria-label="LinkedIn">
+                                    <div class="social-icon social-icon--linkedin"></div>
+                                </a>
+                            </li>
+                            <li class="footer__social-item">
+                                <a class="link" href="https://facebook.com" aria-label="Facebook">
+                                    <div class="social-icon social-icon--facebook"></div>
+                                </a>
+                            </li>
+                            <li class="footer__social-item">
+                                <a class="link" href="https://web.telegram.org/" aria-label="Telegram">
+                                    <div class="social-icon social-icon--telegram"></div>
+                                </a>
+                            </li>
+                            <li class="footer__social-item">
+                                <a class="link" href="https://www.youtube.com/" aria-label="YouTube">
+                                    <div class="social-icon social-icon--youtube"></div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
 
-<main class="main">
-    <div class="main__container">
-        <section class="main__hero">
-            <div class="main__hero-left">
-                <h1 class="main__hero-title">Touch the future</h1>
-                <p class="main__hero-subtitle">choose DEEPAL S07</p>
-                <ul class="main__hero-features">
-                    <li class="main__hero-features-item">
-
-        <span class="checkmark-icon" aria-hidden="true">
-            <div class="checkmark-container">
-                <img src="img/svg/checked.svg" alt="checked" class="checkmark-part">
-            </div>
-        </span>
-
-        <span class="price" style="font-family: 'Prata', serif;">160 kW Maximum motor power</span>
-                    </li>
-                    <li class="main__hero-features-item">
-        <span class="checkmark-icon" aria-hidden="true">
-            <div class="checkmark-container">
-               <img src="img/svg/checked.svg" alt="checked" class="checkmark-part">
-            </div>
-        </span>
-
-        <span class="price" style="font-family: 'Prata', serif;">560 km Maximum EV range on a full charge</span>
-                    </li>
-                    <li class="main__hero-features-item">
-        <span class="checkmark-icon" aria-hidden="true">
-            <div class="checkmark-container">
-                <img src="img/svg/checked.svg" alt="checked" class="checkmark-part">
-            </div>
-        </span>
-
-        <span class="price" style="font-family: 'Prata', serif;">2,900 mm Wheelbase</span>
-                    </li>
-                </ul>
-                <button class="order-button">ORDER</button>
-            </div>
-            <div class="main__hero-right"></div>
-            <div class="main__hero-image"></div>
-        </section>
-
-        <section class="three-section-container" id="second-screen">
-            <div class="left-image"></div>
-            <div class="middle-content property-listing">
-                <div class="property-listing__content">
-                    <ul class="property-list">
-                        <li class="property-list__item">
-                            <article class="property-card">
-                                <div class="property-card__icon">
-                                    <img src="./img/svg/icon1.svg" alt="icon">
-                                </div>
-                                <p class="property-card__description">The EV trim is equipped with an electric motor producing 218–258 hp.</p>
-                            </article>
-                        </li>
-                        <li class="property-list__item">
-                            <article class="property-card">
-                                <div class="property-card__icon">
-                                    <img src="./img/svg/icon1.svg" alt="icon">
-                                </div>
-                                <p class="property-card__description">The EREV trim is equipped with an electric motor producing 238 hp and a 1.5-liter JL473QJ engine producing 95 hp.</p>
-                            </article>
-                        </li>
-                        <li class="property-list__item">
-                            <article class="property-card">
-                                <div class="property-card__icon">
-                                    <img src="./img/svg/icon1.svg" alt="icon">
-                                </div>
-                                <p class="property-card__description">Intelligent interactive headlights (+1000 $) 21-inch Energy Wind Blade wheels + Continental tires + sport calipers.</p>
-                            </article>
-                        </li>
-                        <li class="property-list__item">
-                            <article class="property-card">
-                                <div class="property-card__icon">
-                                    <img src="./img/svg/icon1.svg" alt="icon">
-                                </div>
-                                <p class="property-card__description">Two interior options to choose from: orange and black, panoramic sunroof, rear climate control, head-up display.</p>
-                            </article>
-                        </li>
-                    </ul>
-                    <button class="order-button">ORDER</button>
-                </div>
-            </div>
-            <div class="right-image">
-            </div>
-        </section>
-
-        <section class="contact-form">
-            <div class="contact-form__content">
-                <div class="contact-form__left">
-                    <div class="contact-form__container">
-                        <div class="contact-form__title">Your Information</div>
-                        <form method="post" class="form contact-form__form">
-                            <div class="form__group">
-                                <input type="text" id="name" name="name" class="form__input" placeholder="Name"
-                                       required>
-                                <input type="email" id="email" name="email" class="form__input" placeholder="E-mail"
-                                       required>
-                            </div>
-                            <div class="form__group">
-                                <label class="form__checkbox-label">
-                                    <input type="checkbox" id="privacy" name="privacy" class="form__checkbox" required>
-                                    <span>I accept Privacy policy</span>
-                                </label>
-                            </div>
-                            <button type="submit" class="form__button">CONFIRM</button>
-                        </form>
+                    <div>
+                        <button class="order-button">ORDER</button>
                     </div>
                 </div>
-                <div class="contact-form__right">
-                </div>
-                <img src="./img/content/img5.png" alt="Women" class="form__image-women">
-            </div>
-        </section>
-    </div>
-</main>
-
-<footer class="footer">
-    <div class="footer__container">
-        <nav class="footer__top">
-            <ul class="footer__top-nav">
-                <li class="footer__top-nav-item"><a class="link" href="#">Dealer</a></li>
-                <li class="footer__top-nav-item"><a class="link" href="#">Contact</a></li>
-                <li class="footer__top-nav-item"><a class="link" href="#">About</a></li>
-            </ul>
-        </nav>
-        <div class="footer__bottom">
-            <div class="footer__bottom-row">
-                <div>
-                    <div class="footer__logo">CHANGAN</div>
-                </div>
-                <div class="footer__bottom-row-center">
-                    <ul class="footer__social-list">
-                        <li class="footer__social-item">
-                            <a class="link" href="https://www.instagram.com/" aria-label="Instagram">
-                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
-                                     xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_65_1272)">
-                                        <path d="M21.332 5.33203H10.6654C7.71985 5.33203 5.33203 7.71985 5.33203 10.6654V21.332C5.33203 24.2775 7.71985 26.6654 10.6654 26.6654H21.332C24.2775 26.6654 26.6654 24.2775 26.6654 21.332V10.6654C26.6654 7.71985 24.2775 5.33203 21.332 5.33203Z"
-                                              stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                              stroke-linejoin="round"/>
-                                        <path d="M16 20C18.2091 20 20 18.2091 20 16C20 13.7909 18.2091 12 16 12C13.7909 12 12 13.7909 12 16C12 18.2091 13.7909 20 16 20Z"
-                                              stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                              stroke-linejoin="round"/>
-                                        <path d="M22 10V10.001" stroke="currentColor" stroke-width="2"
-                                              stroke-linecap="round" stroke-linejoin="round"/>
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_65_1272">
-                                            <rect width="32" height="32" fill="currentColor"/>
-                                        </clipPath>
-                                    </defs>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="footer__social-item">
-                            <a class="link" href="https://www.tiktok.com/en/" aria-label="TikTok">
-                                <div class="social-icon social-icon--tiktok"></div>
-                            </a>
-                        </li>
-                        <li class="footer__social-item">
-                            <a class="link" href="https://www.linkedin.com/" aria-label="LinkedIn">
-                                <div class="social-icon social-icon--linkedin"></div>
-                            </a>
-                        </li>
-                        <li class="footer__social-item">
-                            <a class="link" href="https://facebook.com" aria-label="Facebook">
-                                <div class="social-icon social-icon--facebook"></div>
-                            </a>
-                        </li>
-                        <li class="footer__social-item">
-                            <a class="link" href="https://web.telegram.org/" aria-label="Telegram">
-                                <div class="social-icon social-icon--telegram"></div>
-                            </a>
-                        </li>
-                        <li class="footer__social-item">
-                            <a class="link" href="https://www.youtube.com/" aria-label="YouTube">
-                               <div class="social-icon social-icon--youtube"></div>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div>
-                    <button class="order-button">ORDER</button>
-                </div>
-            </div>
-            <div class="footer__bottom-row">
-                <div>
-                    <p class="footer__copyright">&copy; 2025 Copyright.</p>
-                </div>
-                <div class="footer__bottom-row-center">
-                    <a class="link" href="#">Privacy policy</a>
-                </div>
-                <div>
-                    <a class="link" href="#">Terms of Use</a>
+                <div class="footer__bottom-row">
+                    <div>
+                        <p class="footer__copyright">&copy; 2025 Copyright.</p>
+                    </div>
+                    <div class="footer__bottom-row-center">
+                        <a class="link" href="#">Privacy policy</a>
+                    </div>
+                    <div>
+                        <a class="link" href="#">Terms of Use</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</footer>
+    </footer>
+</main>
 
 <script src="index.js"></script>
 </body>

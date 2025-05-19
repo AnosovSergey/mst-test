@@ -9,7 +9,6 @@ html, body {
     width: 100vw;
     padding: 0;
     margin: 0;
-    overflow: hidden;
     color: #FFFFFF;
     font-family: 'Prata', sans-serif;
     background: #282829;
@@ -21,20 +20,41 @@ html {
 
 body {
     font-size: var(--body-font-size);
+    overflow: hidden;
     overflow-y: auto;
     position: relative;
     line-height: 1.5;
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1920px;
     margin: auto;
-    padding: 20px;
+    overflow: hidden;
+    position: relative;
+    gap: 100px;
+}
+
+.row, .col {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+}
+
+.col {
+    flex-direction: column;
+}
+
+.link {
+    text-decoration: none;
+    color: #ffffff;
+
+    &:hover {
+        color: #EFCFAD;
+    }
 }
 
 .order-button {
     font-family: Arial, sans-serif;
-    /*font-weight: bold;*/
     font-size: 20px;
     cursor: pointer;
     padding: 20px 25px;
@@ -43,10 +63,10 @@ body {
     background-color: #ffffff;
     color: black;
     text-transform: uppercase;
-}
 
-.order-button:hover {
-    background-color: #EFCFAD;
+    &:hover {
+        background-color: #EFCFAD;
+    }
 }
 
 /* Header  */
@@ -55,6 +75,7 @@ body {
     background-color: #222222;
     position: fixed;
     width: 100vw;
+    max-width: 1920px;
     top: 0;
     z-index: 1;
     transition: background-color 0.3s cubic-bezier(0.4, 0, 1, 1);
@@ -65,7 +86,6 @@ body {
 }
 
 .header__container {
-    display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 30px 30px 30px 160px;
@@ -73,7 +93,6 @@ body {
 
 .header__main {
     flex: 1;
-    display: flex;
     align-items: center;
 }
 
@@ -83,8 +102,6 @@ body {
 }
 
 .header__logo {
-    /*font-size: 1.875rem;*/
-    /*color: #FFFFFF;*/
     width: 245px;
 }
 
@@ -107,51 +124,41 @@ body {
 
 .header__nav {
     flex: 1;
-    display: flex;
-    position: relative;
     align-items: center;
     justify-content: center;
 }
 
 .header__menu {
-    display: flex;
     gap: 1.8125rem;
 }
 
-.header__menu-item a {
-    color: #FFFFFF;
-    text-transform: uppercase;
-    font-family: 'Arial', sans-serif;
+.header__menu-item {
+    font-family: Arial, sans-serif;
     font-style: italic;
     font-size: 1rem;
+    text-transform: uppercase;
 }
 
-.header__menu-item a:hover {
-    color: #EFCFAD;
-}
+/* Content */
 
-/* Main  */
-
-.main {
-    padding-bottom: 50px;
-    overflow: hidden;
-}
-
-.main__container {
-    display: flex;
-    flex-direction: column;
+.content {
     gap: 100px;
 }
 
-.main__hero {
-    display: flex;
-    min-height: 100vh;
+/* Screens */
+
+.screen {
+}
+
+/* First Screen */
+
+.screen__first {
+    min-height: clamp(500px, 100vh, 1000px);
     background: #222222;
-    position: relative;
     padding: 105px 0 50px 160px;
 }
 
-.main__hero-left {
+.screen__first__left {
     flex: 1;
     position: relative;
     display: flex;
@@ -160,12 +167,12 @@ body {
     justify-content: flex-end;
 }
 
-.main__hero-right, .main__hero-image {
+.screen__first__right, .screen__first__image {
     width: 40%;
     max-width: 783px;
 }
 
-.main__hero-image {
+.screen__first__image {
     width: calc((100% - 160px) * 0.4);
     position: absolute;
     right: 0;
@@ -177,7 +184,7 @@ body {
     background-size: cover;
 }
 
-.main__hero-title {
+.screen__first__title {
     font-size: 4.6em;
     margin-bottom: 3px;
     color: #FFFFFF;
@@ -185,7 +192,7 @@ body {
     line-height: 1.2;
 }
 
-.main__hero-subtitle {
+.screen__first__subtitle {
     font-size: 3em;
     color: #FFFFFF;
     margin-bottom: 44px;
@@ -193,53 +200,43 @@ body {
     padding-left: 0;
 }
 
-.main__hero-features {
+.features {
+    display: flex;
+    flex-direction: column;
+    position: relative;
     list-style: none;
     padding: 0;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
+    gap: 25px;
 }
 
-.main__hero-features-item {
-    font-family: Arial, serif;
+.features__item {
+    display: flex;
     position: relative;
+    font-family: Arial, serif;
     align-items: center;
     gap: 10px;
-    display: flex;
-    text-align: left;
+    font-size: 1.5rem;
 }
 
 .checkmark-icon {
     width: 39px;
     height: 45px;
     display: inline-flex;
+    flex-direction: column;
     justify-content: center;
-    padding-right: 17px;
+    align-items: center;
+    margin-right: 20px;
 }
 
-.checkmark-container {
-    position: relative;
-    width: 20px;
-    height: 20px;
+.features__price {
+    font-size: 1.6em;
+    font-family: 'Prata', serif;
+    margin-top: 0.18em;
+    line-height: 1;
 }
 
-.checkmark-part {
-    max-width: none;
-}
-
-.price {
-    font-size: 2rem;
-}
-
-.description {
-    font-size: 1.5rem;
-}
-
-.main__hero-features-item span {
-    text-align: left;
-    margin-bottom: 25px;
-}
-
-.main__hero-button {
+.screen__first__button {
     background-color: #ffffff;
     color: black;
     padding: 25px 35px;
@@ -249,55 +246,37 @@ body {
     font-size: 1.5em;
 }
 
-.main__hero-button:hover {
-    background-color: #EFCFAD;
-}
+/* Second Screen: Property Listing Section  */
 
-/* Property Listing Section  */
-
-.three-section-container {
-    display: flex;
-    width: 100vw;
-    min-height: 100vh;
-    position: relative;
+.screen__second {
     flex-wrap: wrap;
 }
 
-.three-section-container > div {
+.screen__second > div {
     flex: 1;
 }
 
-.left-image {
+.screen__second__left-image {
     background-image: url('../img/content/img2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
-.right-image {
+.screen__second__right-image {
     background-image: url('../img/content/img3-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
-.middle-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
+.screen__second__property-listing {
+    justify-content: space-between;
     min-width: 40%;
     max-width: 40%;
     overflow: hidden;
-}
-
-.property-listing__content {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex: 1;
-    padding: 0 50px;
     gap: 40px;
+    padding: 0 50px;
 }
 
 .property-list {
@@ -336,42 +315,22 @@ body {
     line-height: 1.4;
 }
 
-.property-listing__button {
-    background-color: white;
-    color: black;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    /* border-radius: 5px; */
-    /* font-size: 1em; */
-    /* width: 580px; */
-    /* height: 78px; */
-    /* position: absolute; */
-    bottom: 20px;
-}
-
-.property-listing__button:hover {
-    background-color: #EFCFAD;
-}
-
 /* Contact Form Section  */
 
-.contact-form {
-    background-color: #282829;
-    margin-top: 50px;
-    position: relative;
-    margin-bottom: 50px;
+.screen__third {
+    align-items: center;
 }
 
-.contact-form__content {
-    background-color: rgba(255, 255, 255, 1);
+.contact-form {
+    display: flex;
+    position: relative;
+
+    background-color: #ffffff;
     border-radius: 30px;
-    margin: 0 auto;
+
+    width: 100%;
     max-width: 1597px;
     height: 628px;
-    display: flex;
-    /* overflow: hidden; */
-    position: relative;
 }
 
 .contact-form__left, .contact-form__right {
@@ -540,7 +499,7 @@ body {
     height: 980px;
 }
 
-.form__image-women {
+.contact-form__image-women {
     position: absolute;
     bottom: -4px;
     right: 0;
@@ -551,9 +510,6 @@ body {
 /* Footer  */
 
 .footer {
-    color: #ffffff;
-    padding-top: 30px;
-    padding-bottom: 30px;
 }
 
 .footer__container {
@@ -688,17 +644,6 @@ body {
     justify-content: center;
 }
 
-
-.link {
-    text-decoration: none;
-    color: white;
-}
-
-.link:hover {
-    color: #EFCFAD;
-}
-
-
 .footer__nav-policy {
     display: flex;
     justify-content: center;
@@ -753,18 +698,18 @@ body {
     color: #222;
 }
 
-/* Адаптивность  */
+/* Адаптивность  *//*
 
 @media (max-width: 768px) {
-    .main__hero {
+    .screen__first {
         flex-direction: column;
     }
 
-    .main__hero-title {
+    .screen__first__title {
         font-size: 2em;
     }
 
-    .main__hero-right {
+    .screen__first__right {
         font-size: 5rem;
         position: relative;
         width: 100%;
@@ -781,7 +726,7 @@ body {
         margin-top: 10px;
     }
 
-    .property-listing__content {
+    .screen__second__property-listing__content {
         padding: 10px;
     }
 
@@ -827,7 +772,7 @@ body {
         padding: 20px;
     }
 
-    /* Стили для активного состояния меню */
+    !* Стили для активного состояния меню *!
 
     .header__nav--active {
         transform: translateY(0);
@@ -847,7 +792,7 @@ body {
 }
 
 @media (max-width: 320px) {
-    .main__hero-title {
+    .screen__first__title {
         font-size: 2em;
     }
-}
+}*/
