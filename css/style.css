@@ -83,8 +83,9 @@ body {
 }
 
 .header__logo {
-    font-size: 1.875rem;
-    color: #FFFFFF;
+    /*font-size: 1.875rem;*/
+    /*color: #FFFFFF;*/
+    width: 245px;
 }
 
 .header__menu-toggle {
