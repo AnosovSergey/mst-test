@@ -1,7 +1,12 @@
-const menuToggle = document.querySelector('.header__menu-toggle');
-const nav = document.querySelector('.header__nav');
+const menuToggle = document.querySelector('#menu-toggle');
+const menu = document.querySelector('#menu');
+const menuBackdrop = document.querySelector('#menu-backdrop');
 
-menuToggle.addEventListener('click', () => {
-    nav.classList.toggle('header__nav--active');
-    menuToggle.classList.toggle('header__menu-toggle--active');
-});
+const menuClick = () => {
+    menuBackdrop.classList.toggle('modal-menu--opened');
+    menu.classList.toggle('modal-menu--opened');
+    menuToggle.classList.toggle('header__menu-toggle--opened');
+}
+
+menuToggle.addEventListener('click', menuClick);
+menuBackdrop.addEventListener('click', menuClick);

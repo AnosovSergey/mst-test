@@ -13,15 +13,30 @@
     <header class="header">
         <div class="row header__container">
             <div class="row header__main">
-                <button class="header__menu-toggle" aria-label="Menu"><span class="header__menu-toggle-line"></span>
-                    <span class="header__menu-toggle-line"></span>
-                    <span class="header__menu-toggle-line"></span>
-                </button>
                 <div class="header__logo">
                     <img src="img/svg/logo-white.svg" alt="logo">
                 </div>
                 <nav class="row header__nav">
                     <ul class="row header__menu">
+                        <li class="header__menu-item">
+                            <a class="link" href="#">Lineup DEEPAL</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a class="link" href="#">Buy a car</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a class="link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="header__menu-toggle" aria-label="Menu" id="menu-toggle">
+                    <span class="header__menu-toggle-line"></span>
+                </button>
+                <div class="header__backdrop" id="menu-backdrop">
+
+                </div>
+                <nav id="menu" class="col header__nav header__modal-menu">
+                    <ul class="col header__menu">
                         <li class="header__menu-item">
                             <a class="link" href="#">Lineup DEEPAL</a>
                         </li>
@@ -40,6 +55,7 @@
 
     <section class="row screen screen__first">
         <div class="screen__first__left">
+            <div class="screen__first__top-image"></div>
             <h1 class="screen__first__title">Touch the future</h1>
             <p class="screen__first__subtitle">choose DEEPAL S07</p>
             <ul class="features">
