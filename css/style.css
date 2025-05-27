@@ -216,7 +216,7 @@ body {
 /* First Screen */
 
 .screen__first {
-    min-height: clamp(500px, 100vh, 1000px);
+    min-height: clamp(500px, 100dvh, 1000px);
     background: #222222;
     padding: 6.56rem 0 3.125rem 0;
 }
