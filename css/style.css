@@ -35,7 +35,7 @@ body {
     margin: auto;
     overflow: hidden;
     position: relative;
-    gap: 6.25rem;
+    gap: 4.25em;
 }
 
 .row, .col {
@@ -50,7 +50,7 @@ body {
 
 .order-button {
     font-family: Arial, sans-serif;
-    font-size: 1.25rem;
+    font-size: 1.25em;
     cursor: pointer;
     padding: 1em 1.25em;
     border: none;
@@ -93,8 +93,8 @@ body {
 }
 
 .header__logo {
-    height: 1.5rem;
-    min-width: 9rem;
+    height: 1.5em;
+    /* min-width: 9em; */
 }
 
 .header__logo img {
@@ -155,11 +155,11 @@ body {
     flex: 1;
     align-items: center;
     justify-content: center;
-    padding: 0 1rem;
+    padding: 0 1em;
 }
 
 .header__menu {
-    gap: 1.8125rem;
+    gap: 1.8125em;
 }
 
 .header__backdrop, .header__modal-menu {
@@ -197,7 +197,7 @@ body {
 .header__menu-item {
     font-family: Arial, sans-serif;
     font-style: italic;
-    font-size: 1rem;
+    font-size: 1em;
     text-transform: uppercase;
     white-space: nowrap;
 }
@@ -218,7 +218,7 @@ body {
 .screen__first {
     min-height: clamp(500px, 100dvh, 1000px);
     background: #222222;
-    padding: 6.56rem 0 3.125rem 0;
+    padding: 6.56em 0 3.125em 0;
 }
 
 .header__container, .screen__first {
@@ -251,7 +251,7 @@ body {
     display: none;
     width: 100%;
     flex: 1;
-    min-height: 2em;
+    min-height: 10em;
 }
 
 .screen__first__image {
@@ -264,7 +264,7 @@ body {
 }
 
 .screen__first__title {
-    font-size: 5rem;
+    font-size: 5em;
     margin-bottom: 0.0375em;
     color: #FFFFFF;
     font-weight: normal;
@@ -272,7 +272,7 @@ body {
 }
 
 .screen__first__subtitle {
-    font-size: 3.125rem;
+    font-size: 3.125em;
     color: #FFFFFF;
     margin-bottom: 1.28em;
     text-align: left;
@@ -343,7 +343,10 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    min-height: 10em;
 }
+
+
 
 .screen__second__right-image {
     background-image: url('../img/content/img3-bg.jpg');
@@ -374,10 +377,10 @@ body {
 .property-list__item {
     padding: 1.66em 0;
     border-bottom: 0.0416em solid #55565A;
-}
 
-.property-list__item:last-child {
-    border-bottom: none;
+    &:last-child {
+        border-bottom-width: 0;
+    }
 }
 
 .property-card {
@@ -392,7 +395,7 @@ body {
 }
 
 .property-card__description {
-    font-size: 1.5rem;
+    font-size: 1.5em;
     font-family: Arial, sans-serif;
     line-height: 1.4;
 }
@@ -456,7 +459,7 @@ body {
 }
 
 .contact-form__title {
-    font-size: 3.375rem;
+    font-size: 3.375em;
     line-height: 1.1;
     color: #38535D;
 }
@@ -583,7 +586,7 @@ body {
 }
 
 .footer__top {
-    font-size: 1.25rem;
+    font-size: 1.25em;
     font-family: 'Arial', sans-serif;
     font-style: italic;
     text-transform: uppercase;
@@ -625,33 +628,35 @@ body {
 }
 
 .social-icon {
-    width: 2rem;
-    height: 2rem;
+    width: 2em;
+    height: 2em;
     background-color: currentColor;
+    mask: no-repeat center;
+    mask-size: 100%;
 }
 
 .social-icon--instagram {
-    mask: url(../img/svg/instagram.svg);
+    mask-image: url(../img/svg/instagram.svg);
 }
 
 .social-icon--tiktok {
-    mask: url(../img/svg/tiktok.svg);
+    mask-image: url(../img/svg/tiktok.svg);
 }
 
 .social-icon--linkedin {
-    mask: url(../img/svg/linkedin.svg) no-repeat center;
+    mask-image: url(../img/svg/linkedin.svg);
 }
 
 .social-icon--facebook {
-    mask: url(../img/svg/facebook.svg);
+    mask-image: url(../img/svg/facebook.svg);
 }
 
 .social-icon--telegram {
-    mask: url(../img/svg/telegram.svg);
+    mask-image: url(../img/svg/telegram.svg);
 }
 
 .social-icon--youtube {
-    mask: url(../img/svg/youtube.svg);
+    mask-image: url(../img/svg/youtube.svg);
 }
 
 .footer__bottom-row {
@@ -678,13 +683,12 @@ body {
 }
 
 .footer__logo {
-    /*margin-top: 0.18rem;*/
-    font-size: 2.25rem;
+    font-size: 2.25em;
     line-height: 1;
 }
 
 .footer__copyright {
-    font-size: 1.25rem;
+    font-size: 1.25em;
 }
 
 .footer__social {
@@ -696,7 +700,7 @@ body {
     padding: 0;
     margin: 0;
     display: flex;
-    gap: 2rem;
+    gap: 2em;
     align-items: center;
 }
 
@@ -727,8 +731,61 @@ body {
 /* Адаптивность */
 
 @media (max-width: 1024px) {
+
+    .header,
+    .screen__first,
+    .footer__container{
+        font-size: 0.6em;
+    }
+
     .header__container, .screen__first {
-        padding-left: 2rem;
+        padding-left: 2em;
+    }
+
+    .screen__second {
+        flex-direction: column;
+    }
+
+    .screen__second__left-image {
+        background-image: url(../img/content/battary.jpg);
+        width: 100%;
+    }
+
+    .screen__second__right-image {
+        display: none;
+    }
+
+    .screen__second__property-listing {
+        max-width: unset;
+    }
+
+    .property-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 25px;
+    }
+
+    .property-list__item {
+        min-width: 40%;
+        max-width: 40%;
+
+        &:last-child {
+            border-bottom-width: 0.0416em;
+        }
+    }
+
+    .property-card__description {
+        font-size: 1.5em;
+    }
+
+    .screen__third {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    .contact-form {
+        font-size: 0.65em;
     }
 
     .contact-form__image-women {
@@ -736,8 +793,8 @@ body {
     }
 
     .footer__bottom {
-        padding-left: 2rem;
-        padding-right: 2rem;
+        padding-left: 2em;
+        padding-right: 2em;
     }
 }
 
@@ -766,15 +823,15 @@ body {
 
     .screen__first__top-image {
         display: block;
-        height: 2rem;
+        height: 2em;
     }
 
     .screen__first__title {
-        font-size: 2rem;
+        font-size: 2em;
     }
 
     .screen__first__subtitle {
-        font-size: 1.5rem;
+        font-size: 1.5em;
     }
 
     .features {
@@ -782,7 +839,7 @@ body {
     }
 
     .order-button {
-        font-size: 1rem;
+        font-size: 1em;
         padding: 1em 1.25em;
         border-radius: 0.25em;
     }
