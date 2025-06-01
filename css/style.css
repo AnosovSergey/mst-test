@@ -15,6 +15,7 @@ html, body {
 }
 
 html {
+    scroll-behavior: smooth;
     font-size: var(--root-font-size);
 }
 
@@ -58,6 +59,7 @@ body {
     background-color: #ffffff;
     color: black;
     text-transform: uppercase;
+    text-align: center;
 
     &:hover {
         background-color: #EFCFAD;
