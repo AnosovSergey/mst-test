@@ -834,6 +834,10 @@ body {
         font-size: 1.5em;
     }
 
+    .screen__second__property-listing {
+        padding-top: 1.5em;
+    }
+
     .property-list {
         flex-direction: column;
         justify-content: center;
@@ -843,6 +847,7 @@ body {
     .property-list__item {
         min-width: 100%;
         max-width: 100%;
+        padding: 0;
     }
 
     .property-card__description {
@@ -850,6 +855,7 @@ body {
 
     .contact-form {
         font-size: 0.4em;
+        height: 35.25em;
     }
 
     .contact-form__right {
@@ -858,6 +864,12 @@ body {
 
     .contact-form__image-women {
         display: none;
+    }
+    .footer__logo {
+        display: none;
+    }
+    .footer__bottom-row > div {
+        flex: none;
     }
 }
 
